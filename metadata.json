@@ -1,0 +1,6 @@
+{
+  "name": "DigitLens: Handwritten Digit Recognition Using Neural Networks",
+  "description": "DigitLens is a fun and creative handwritten digit recognition web app powered by a real trained TensorFlow/Keras MNIST neural network.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

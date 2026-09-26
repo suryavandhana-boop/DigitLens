@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-heading {
+  font-family: 'Fredoka', cursive, sans-serif;
+}
+
+.font-handwriting {
+  font-family: 'Patrick Hand', 'Caveat', cursive, sans-serif;
+}
+
+.font-chalk {
+  font-family: 'Caveat', cursive, sans-serif;
+}
+
+/* Subtle Notebook Grid & Ruled Patterns */
+.bg-notebook-grid {
+  background-image: radial-gradient(#38bdf8 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-notebook-ruled {
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 27px,
+    #bae6fd 28px
+  );
+}
+
+.bg-chalkboard {
+  background-color: #1b382b;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 12px 12px;
+}
+
+/* Playful Doodle Float Keyframes */
+@keyframes doodle-bob {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+}
+
+@keyframes doodle-spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes doodle-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+}
+
+.animate-doodle-bob {
+  animation: doodle-bob 4s ease-in-out infinite;
+}
+
+.animate-doodle-bob-delayed {
+  animation: doodle-bob 5s ease-in-out 1.5s infinite;
+}
+
+.animate-doodle-spin-slow {
+  animation: doodle-spin-slow 24s linear infinite;
+}
+
+.animate-doodle-pulse {
+  animation: doodle-pulse 3s ease-in-out infinite;
+}
